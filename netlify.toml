@@ -1,0 +1,43 @@
+#  Chagan Technology — Netlify configuration
+#  Static site, no build step: Netlify serves the repository root as-is.
+
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Fingerprint-free static assets: cache for a day, revalidate after.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+# The legacy PHP site is not part of this repository and must never be served.
+[[redirects]]
+  from = "/legacy/*"
+  to = "/404.html"
+  status = 404
+
+# Old site's entry points -> new single page.
+[[redirects]]
+  from = "/index_tr.html"
+  to = "/?lang=tr"
+  status = 301
+
+[[redirects]]
+  from = "/index.php"
+  to = "/"
+  status = 301

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chagan Technology — Yapay zekâ odaklı ürünler, web platformları ve geliştirici araçları</title>
+<meta name="description" content="Çağan Yazılım Teknolojileri ve Pazarlama Ltd. Şti. — 2016'dan beri yapay zekâ odaklı ürünler, web platformları, mobil uygulamalar ve geliştirici araçları tasarlıyor ve geliştiriyoruz. tunr.sh, Vitrus, Eduira, Kavriyo.">
+<meta name="theme-color" content="#0a0812">
+<link rel="canonical" href="https://www.chagantechs.com/">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chagan Technology">
+<meta property="og:title" content="Chagan Technology — AI-native products, web platforms, developer tools">
+<meta property="og:description" content="Çağan Yazılım Teknolojileri ve Pazarlama Ltd. Şti. Building software since 2016. tunr.sh · vitrus.dev · eduira.com · kavriyo.com">
+<meta property="og:url" content="https://www.chagantechs.com/">
+<meta property="og:image" content="https://www.chagantechs.com/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Chagan Technology",
+  "legalName": "Çağan Yazılım Teknolojileri ve Pazarlama Ltd. Şti.",
+  "url": "https://www.chagantechs.com/",
+  "logo": "https://www.chagantechs.com/assets/img/icon-512.png",
+  "foundingDate": "2016",
+  "email": "contact@chagantechs.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Gaziantep Teknopark, 4/A Blok Z/12",
+    "addressLocality": "Şehitkamil",
+    "addressRegion": "Gaziantep",
+    "addressCountry": "TR"
+  },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "tunr", "url": "https://www.tunr.sh" } },
+    { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Vitrus", "url": "https://www.vitrus.dev" } },
+    { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Eduira", "url": "https://www.eduira.com" } },
+    { "@type": "Offer", "itemOffered": { "@type": "SoftwareApplication", "name": "Kavriyo", "url": "https://www.kavriyo.com" } }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top" aria-label="Chagan Technology">
+      <img class="brand__mark" src="/assets/img/mark.png" alt="" width="34" height="34">
+      <span class="brand__text">Chagan<span class="brand__thin"> Technology</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="#products" data-i18n="nav.products">Ürünler</a>
+      <a href="#services" data-i18n="nav.services">Hizmetler</a>
+      <a href="#about" data-i18n="nav.about">Hakkımızda</a>
+      <a href="#archive" data-i18n="nav.archive">Arşiv</a>
+      <a href="#contact" data-i18n="nav.contact">İletişim</a>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="langtoggle" role="group" aria-label="Dil / Language">
+        <button type="button" class="langtoggle__btn is-active" data-lang="tr" aria-pressed="true">TR</button>
+        <button type="button" class="langtoggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn--sm btn--primary nav__cta" href="#contact" data-i18n="nav.cta">Konuşalım</a>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="mobilemenu" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobilemenu" id="mobilemenu" hidden>
+    <a href="#products" data-i18n="nav.products">Ürünler</a>
+    <a href="#services" data-i18n="nav.services">Hizmetler</a>
+    <a href="#about" data-i18n="nav.about">Hakkımızda</a>
+    <a href="#archive" data-i18n="nav.archive">Arşiv</a>
+    <a href="#contact" data-i18n="nav.contact">İletişim</a>
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="wrap hero__inner">
+    <p class="eyebrow reveal" lang="tr" data-i18n="hero.eyebrow">Çağan Yazılım Teknolojileri ve Pazarlama Ltd. Şti.</p>
+
+    <h1 class="hero__title reveal">
+      <span data-i18n="hero.title1">Fikirden ürüne,</span><br>
+      <span class="grad" data-i18n="hero.title2">2016'dan beri.</span>
+    </h1>
+
+    <p class="hero__lead reveal" data-i18n="hero.lead">
+      Gaziantep Teknopark'tan dünyaya. Yapay zekâ odaklı ürünler, web platformları,
+      mobil uygulamalar ve geliştirici araçları tasarlıyor, geliştiriyor ve yayına alıyoruz.
+    </p>
+
+    <div class="hero__cta reveal">
+      <a class="btn btn--primary" href="#products" data-i18n="hero.cta1">Ürünlerimizi görün</a>
+      <a class="btn btn--ghost" href="mailto:contact@chagantechs.com">contact@chagantechs.com</a>
+    </div>
+
+    <ul class="hero__strip reveal" aria-label="Aktif ürünler">
+      <li><a href="https://www.tunr.sh" target="_blank" rel="noopener">tunr.sh</a></li>
+      <li><a href="https://www.vitrus.dev" target="_blank" rel="noopener">vitrus.dev</a></li>
+      <li><a href="https://www.eduira.com" target="_blank" rel="noopener">eduira.com</a></li>
+      <li><a href="https://www.kavriyo.com" target="_blank" rel="noopener">kavriyo.com</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================= STATS ======================= -->
+<section class="stats">
+  <div class="wrap stats__grid">
+    <div class="stat reveal"><span class="stat__n">2016</span><span class="stat__l" data-i18n="stat.founded">Kuruluş yılı</span></div>
+    <div class="stat reveal"><span class="stat__n">4</span><span class="stat__l" data-i18n="stat.active">Aktif ürün</span></div>
+    <div class="stat reveal"><span class="stat__n">10+</span><span class="stat__l" data-i18n="stat.shipped">Yayınlanan proje</span></div>
+    <div class="stat reveal"><span class="stat__n">2</span><span class="stat__l" data-i18n="stat.ks">Kickstarter kampanyası</span></div>
+  </div>
+</section>
+
+<!-- ======================= PRODUCTS ======================= -->
+<section class="section" id="products">
+  <div class="wrap">
+    <header class="sechead reveal">
+      <p class="kicker" data-i18n="products.kicker">Ürünler</p>
+      <h2 class="sectitle" data-i18n="products.title">Bugün üzerinde çalıştığımız şeyler</h2>
+      <p class="secsub" data-i18n="products.sub">
+        Son dönemde geliştirdiğimiz dört web uygulaması. Hepsi canlıda, hepsi bizim.
+      </p>
+    </header>
+
+    <div class="products">
+
+      <article class="pcard reveal" style="--accent:#34d399">
+        <div class="pcard__head">
+          <span class="pcard__num">01</span>
+          <div>
+            <h3 class="pcard__name">tunr</h3>
+            <a class="pcard__domain" href="https://www.tunr.sh" target="_blank" rel="noopener">tunr.sh <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="pcard__tag" data-i18n="p.tunr.tag">“Ship the apps your agent builds”</p>
+        <p class="pcard__desc" data-i18n="p.tunr.desc">
+          Yapay zekâ ajanlarının ürettiği uygulamaları saniyeler içinde yayına alan dağıtım ve tünelleme platformu.
+          localhost'ta ölüp giden projelere kalıcı bir adres verir, müşteri demolarını güvenle paylaşmanızı sağlar.
+        </p>
+        <ul class="pcard__feats">
+          <li data-i18n="p.tunr.f1">Tek komutla dağıtım — CLI ve MCP</li>
+          <li data-i18n="p.tunr.f2">Uyuyan uygulamalar ~150 ms'de uyanır</li>
+          <li data-i18n="p.tunr.f3">HTTPS, WebSocket, TCP, UDP ve TLS tünelleri</li>
+          <li data-i18n="p.tunr.f4">Parola, IP beyaz listesi, süreli bağlantılar</li>
+        </ul>
+        <div class="pcard__tags"><span>Developer Tools</span><span>MCP</span><span>Infra</span></div>
+      </article>
+
+      <article class="pcard reveal" style="--accent:#60a5fa">
+        <div class="pcard__head">
+          <span class="pcard__num">02</span>
+          <div>
+            <h3 class="pcard__name">Vitrus</h3>
+            <a class="pcard__domain" href="https://www.vitrus.dev" target="_blank" rel="noopener">vitrus.dev <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="pcard__tag" data-i18n="p.vitrus.tag">“Web analytics you can check”</p>
+        <p class="pcard__desc" data-i18n="p.vitrus.desc">
+          Çerezsiz, açık kaynaklı web analitiği. Her metriğin arkasındaki SQL sorgusunu, parametrelerini ve ham
+          sonucunu tek tıkla gösteren bir şeffaflık katmanı taşır; doğrulanamayan hiçbir iddia ekranda kalmaz.
+        </p>
+        <ul class="pcard__feats">
+          <li data-i18n="p.vitrus.f1">Her metriğin altında görünür SQL sorgusu</li>
+          <li data-i18n="p.vitrus.f2">Yapay zekâ yönlendirmelerini tarayıcı botlarından ayırır</li>
+          <li data-i18n="p.vitrus.f3">20+ görünüm: huniler, kohortlar, Core Web Vitals</li>
+          <li data-i18n="p.vitrus.f4">Tek Bun süreci ve gömülü SQLite — Apache-2.0</li>
+        </ul>
+        <div class="pcard__tags"><span>Analytics</span><span>Open Source</span><span>Privacy</span></div>
+      </article>
+
+      <article class="pcard reveal" style="--accent:#fbbf24">
+        <div class="pcard__head">
+          <span class="pcard__num">03</span>
+          <div>
+            <h3 class="pcard__name">Eduira</h3>
+            <a class="pcard__domain" href="https://www.eduira.com" target="_blank" rel="noopener">eduira.com <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="pcard__tag" data-i18n="p.eduira.tag">“Tek bir istem, eksiksiz bir ders ekosistemi”</p>
+        <p class="pcard__desc" data-i18n="p.eduira.desc">
+          Öğretmenler için yapay zekâ temelli içerik motoru. Konuyu bir kez anlatın; ders planı, etkinlikler,
+          çalışma kâğıtları ve sınıf içi çok oyunculu bir oyun aynı anda hazır olsun.
+        </p>
+        <ul class="pcard__feats">
+          <li data-i18n="p.eduira.f1">40+ özelleştirilebilir etkileşimli etkinlik şablonu</li>
+          <li data-i18n="p.eduira.f2">Cevap anahtarlı, tek tıkla PDF çalışma kâğıtları</li>
+          <li data-i18n="p.eduira.f3">PIN ile 60 oyuncuya kadar canlı sınıf oyunu</li>
+          <li data-i18n="p.eduira.f4">Sohbetle düzenleme, LMS ve SCORM dışa aktarımı</li>
+        </ul>
+        <div class="pcard__tags"><span>EdTech</span><span>AI</span><span>Realtime</span></div>
+      </article>
+
+      <article class="pcard reveal" style="--accent:#e0218a">
+        <div class="pcard__head">
+          <span class="pcard__num">04</span>
+          <div>
+            <h3 class="pcard__name">Kavriyo</h3>
+            <a class="pcard__domain" href="https://www.kavriyo.com" target="_blank" rel="noopener">kavriyo.com <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="pcard__tag" data-i18n="p.kavriyo.tag">“LGS ve YKS'yi Kavra”</p>
+        <p class="pcard__desc" data-i18n="p.kavriyo.desc">
+          Türkiye'deki öğrenciler için LGS ve YKS hazırlık platformu. Ezberletmek yerine kavratmaya odaklanan,
+          sınav sistemine göre kurgulanmış bir çalışma deneyimi.
+        </p>
+        <ul class="pcard__feats">
+          <li data-i18n="p.kavriyo.f1">LGS ve YKS müfredatına göre kurgulanmış içerik</li>
+          <li data-i18n="p.kavriyo.f2">Konu kavramaya odaklı çalışma akışı</li>
+          <li data-i18n="p.kavriyo.f3">Öğrencinin hızına uyum sağlayan tekrar</li>
+          <li data-i18n="p.kavriyo.f4">Telefon, tablet ve bilgisayarda çalışan web uygulaması</li>
+        </ul>
+        <div class="pcard__tags"><span>EdTech</span><span>Web App</span><span lang="tr">Türkiye</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SERVICES ======================= -->
+<section class="section section--alt" id="services">
+  <div class="wrap">
+    <header class="sechead reveal">
+      <p class="kicker" data-i18n="services.kicker">Hizmetler</p>
+      <h2 class="sectitle" data-i18n="services.title">Ne yapıyoruz</h2>
+      <p class="secsub" data-i18n="services.sub">
+        Kendi ürünlerimizi kurarken öğrendiklerimizi, birlikte çalıştığımız ekiplerin işine taşıyoruz.
+      </p>
+    </header>
+
+    <div class="svcgrid">
+      <article class="svc reveal">
+        <div class="svc__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M7 9l2.5 2L7 13M12.5 13h4"/></svg>
+        </div>
+        <h3 data-i18n="svc.1.t">Web ve SaaS Platformları</h3>
+        <p data-i18n="svc.1.d">Fikirden canlı ürüne: ürün tasarımı, çok kiracılı mimari, ödeme altyapısı ve ölçeklenebilir arka uç.</p>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5.6 5.6 7.8 7.8M16.2 16.2l2.2 2.2M18.4 5.6 16.2 7.8M7.8 16.2l-2.2 2.2"/><circle cx="12" cy="12" r="4"/></svg>
+        </div>
+        <h3 data-i18n="svc.2.t">Yapay Zekâ Odaklı Ürünler</h3>
+        <p data-i18n="svc.2.d">LLM destekli özellikler, ajan iş akışları, MCP sunucuları ve üretim ortamında güvenilir çalışan değerlendirme altyapısı.</p>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18h3"/></svg>
+        </div>
+        <h3 data-i18n="svc.3.t">Mobil Uygulamalar</h3>
+        <p data-i18n="svc.3.d">iOS ve Android için uçtan uca uygulama geliştirme; mağaza yayını, sürüm yönetimi ve ürün analitiği dâhil.</p>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 3l-4 18"/></svg>
+        </div>
+        <h3 data-i18n="svc.4.t">Geliştirici Araçları ve Altyapı</h3>
+        <p data-i18n="svc.4.d">CLI'lar, SDK'lar, dağıtım hatları, gözlemlenebilirlik ve ekiplerin hızını artıran iç platformlar.</p>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19 19 12l3 3-7 7z"/><path d="M18 13 16.5 5.5 2 2l3.5 14.5L13 18z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3 data-i18n="svc.5.t">Ürün ve Arayüz Tasarımı</h3>
+        <p data-i18n="svc.5.d">Marka kimliği, tasarım sistemi, arayüz ve etkileşim tasarımı — prototipten üretime kadar tek elden.</p>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 2v3M14 2v3M10 19v3M14 19v3M2 10h3M2 14h3M19 10h3M19 14h3"/></svg>
+        </div>
+        <h3 data-i18n="svc.6.t">Donanım ve IoT</h3>
+        <p data-i18n="svc.6.d">Güç elektroniği ve gömülü sistemlerde yıllara dayanan deneyim; prototipten üretime donanım projeleri.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ABOUT ======================= -->
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about__intro reveal">
+      <p class="kicker" data-i18n="about.kicker">Hakkımızda</p>
+      <h2 class="sectitle" data-i18n="about.title">Küçük bir ekip, uzun bir yol</h2>
+      <p class="secsub" data-i18n="about.p1">
+        Çağan Yazılım Teknolojileri 2016 yılında kuruldu. Köklerimiz ise 2009'a, bir meslek lisesinin
+        bilgisayar atölyesinde başlayan “Fabrikapps” çalışmalarına uzanıyor. O günden bu yana mobil uygulamalar,
+        oyunlar, açık kaynaklı donanım projeleri ve tasarım ürünleri çıkardık. Bugün yapay zekâ odaklı
+        web uygulamaları geliştiriyoruz.
+      </p>
+      <p class="secsub" data-i18n="about.p2">
+        Merkezimiz Gaziantep Teknopark. Küçük kalmayı, bir işi baştan sona kendimiz yapmayı ve çıkardığımız her
+        ürünün arkasında durmayı tercih ediyoruz.
+      </p>
+      <a class="btn btn--ghost" href="#contact" data-i18n="about.cta">Birlikte çalışalım</a>
+    </div>
+
+    <ol class="timeline reveal">
+      <li class="tl">
+        <span class="tl__year">2009</span>
+        <h3 class="tl__t" data-i18n="tl.1.t">Köklerimiz</h3>
+        <p class="tl__d" data-i18n="tl.1.d">Ahmet Vural, Nizip/GTO Meslek Lisesi Bilgisayar Bilimleri öğrencileriyle birlikte “Fabrikapps” adı altında mobil uygulama ve oyun geliştirmeye başladı.</p>
+      </li>
+      <li class="tl">
+        <span class="tl__year">2015</span>
+        <h3 class="tl__t" data-i18n="tl.2.t">AVILabs ve ilk Kickstarter</h3>
+        <p class="tl__d" data-i18n="tl.2.d">AVILabs markasıyla, eğitim amaçlı ve kâr amacı gütmeyen bir Kickstarter projesi başarıyla tamamlandı.</p>
+      </li>
+      <li class="tl">
+        <span class="tl__year" data-i18n="tl.3.y">Nisan 2016</span>
+        <h3 class="tl__t" data-i18n="tl.3.t">Şirketin kuruluşu</h3>
+        <p class="tl__d" data-i18n="tl.3.d">Başarılı ACp projesinin ardından, TÜBİTAK desteğiyle Çağan Yazılım Teknolojileri ve Pazarlama Ltd. Şti. resmen kuruldu.</p>
+      </li>
+      <li class="tl">
+        <span class="tl__year">2017</span>
+        <h3 class="tl__t" data-i18n="tl.4.t">Yeniden ayağa kalkış</h3>
+        <p class="tl__d" data-i18n="tl.4.d">Zor bir dönemin ardından Gaziantep Teknopark'taki ofiste çalışmalara yeniden başlandı.</p>
+      </li>
+      <li class="tl">
+        <span class="tl__year">2018–2023</span>
+        <h3 class="tl__t" data-i18n="tl.5.t">Ürün ve tasarım dönemi</h3>
+        <p class="tl__d" data-i18n="tl.5.d">Mobil uygulamalar, oyunlar, “Gelenekten Geleceğe” tasarım ürünleri ve kurumsal yazılım projeleri.</p>
+      </li>
+      <li class="tl tl--now">
+        <span class="tl__year">2024–2026</span>
+        <h3 class="tl__t" data-i18n="tl.6.t">Yapay zekâ odaklı dönem</h3>
+        <p class="tl__d" data-i18n="tl.6.d">tunr, Vitrus, Eduira ve Kavriyo: hepsi yapay zekâ çağının araçlarıyla, o çağ için tasarlanmış web uygulamaları.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======================= ARCHIVE ======================= -->
+<section class="section section--alt" id="archive">
+  <div class="wrap">
+    <header class="sechead reveal">
+      <p class="kicker" data-i18n="archive.kicker">Arşiv</p>
+      <h2 class="sectitle" data-i18n="archive.title">Daha önce çıkardıklarımız</h2>
+      <p class="secsub" data-i18n="archive.sub">
+        Oyunlardan açık kaynaklı güç elektroniğine, belediye yazılımından endüstriyel tasarıma uzanan bir geçmiş.
+      </p>
+    </header>
+
+    <div class="archgrid">
+      <article class="arch reveal"><h3>MYS</h3><p data-i18n="a.mys">Belediyeler için mobil yönetici sistemi. Saysis iş birliğiyle geliştirildi.</p><span class="arch__cat" data-i18n="cat.software">Yazılım</span></article>
+      <article class="arch reveal"><h3>I, Drone</h3><p data-i18n="a.idrone">Oyun stüdyomuzdan çıkan, bilim kurgu temalı üçüncü şahıs bulmaca oyunu.</p><span class="arch__cat" data-i18n="cat.game">Oyun</span></article>
+      <article class="arch reveal"><h3>readsta</h3><p data-i18n="a.readsta">iOS ve Android için anlık e-kitap okuyucu uygulaması.</p><span class="arch__cat" data-i18n="cat.mobile">Mobil</span></article>
+      <article class="arch reveal"><h3>Chosen One</h3><p data-i18n="a.chosen">iOS ve Android için hızlı aksiyon-bulmaca oyunu.</p><span class="arch__cat" data-i18n="cat.game">Oyun</span></article>
+      <article class="arch reveal"><h3>ACp</h3><p data-i18n="a.acp">Kickstarter ile fonlanan, AC/DC çıkışlı açık kaynaklı güç bankası. Tüm teknik temeli açık kaynak olarak yayımlandı.</p><span class="arch__cat" data-i18n="cat.hw">Donanım</span></article>
+      <article class="arch reveal"><h3>PBox</h3><p data-i18n="a.pbox">ACp'nin devamı: AC, DC, USB ve USB-C çıkışlı 120.000 mA Li-Ion güç jeneratörü.</p><span class="arch__cat" data-i18n="cat.hw">Donanım</span></article>
+      <article class="arch reveal"><h3>Kayf 1 &amp; 2</h3><p data-i18n="a.kayf">“Gelenekten Geleceğe” projesinin ilk ürünü. İçeceklerinizi saatlerce sıcak ya da soğuk tutar.</p><span class="arch__cat" data-i18n="cat.design">Tasarım</span></article>
+      <article class="arch reveal"><h3>nln</h3><p data-i18n="a.nln">“Gelenekten Geleceğe” projesinin ikinci ürünü; sıcak yaz günlerinde ayaklarınızı rahatlatır.</p><span class="arch__cat" data-i18n="cat.design">Tasarım</span></article>
+      <article class="arch reveal"><h3>Wiro</h3><p data-i18n="a.wiro">Karpal tünel sendromuna karşı tasarlanmış bilek desteği ve masaj cihazı.</p><span class="arch__cat" data-i18n="cat.design">Tasarım</span></article>
+      <article class="arch reveal"><h3>Liber</h3><p data-i18n="a.liber">Kitapseverler için tasarlanmış çok amaçlı çelik alet.</p><span class="arch__cat" data-i18n="cat.design">Tasarım</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTACT ======================= -->
+<section class="section" id="contact">
+  <div class="wrap contact">
+    <div class="contact__left reveal">
+      <p class="kicker" data-i18n="contact.kicker">İletişim</p>
+      <h2 class="sectitle" data-i18n="contact.title">Bir fikriniz mi var?</h2>
+      <p class="secsub" data-i18n="contact.sub">
+        Yeni bir ürün, mevcut bir platformun büyütülmesi ya da sadece bir soru — yazın, en kısa sürede dönelim.
+      </p>
+
+      <ul class="cinfo">
+        <li>
+          <span class="cinfo__k" data-i18n="contact.k.general">Genel</span>
+          <a class="cinfo__v" href="mailto:contact@chagantechs.com">contact@chagantechs.com</a>
+        </li>
+        <li>
+          <span class="cinfo__k" data-i18n="contact.k.support">Destek</span>
+          <a class="cinfo__v" href="mailto:support@chagantechs.com">support@chagantechs.com</a>
+        </li>
+        <li>
+          <span class="cinfo__k" data-i18n="contact.k.office">Ofis</span>
+          <span class="cinfo__v cinfo__v--plain" data-i18n="contact.address">Gaziantep Teknopark, 4/A Blok Z/12<br>Şehitkamil / Gaziantep, Türkiye</span>
+        </li>
+        <li>
+          <span class="cinfo__k" data-i18n="contact.k.legal">Unvan</span>
+          <span class="cinfo__v cinfo__v--plain">Çağan Yazılım Teknolojileri ve Pazarlama Ltd. Şti.</span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="cform reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Bu alanı boş bırakın <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+
+      <div class="field">
+        <label for="f-name" data-i18n="form.name">Ad Soyad</label>
+        <input id="f-name" name="name" type="text" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="f-email" data-i18n="form.email">E-posta</label>
+        <input id="f-email" name="email" type="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="f-company" data-i18n="form.company">Şirket (isteğe bağlı)</label>
+        <input id="f-company" name="company" type="text" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="f-msg" data-i18n="form.message">Mesajınız</label>
+        <textarea id="f-msg" name="message" rows="5" required></textarea>
+      </div>
+      <button class="btn btn--primary btn--full" type="submit" data-i18n="form.submit">Mesajı gönder</button>
+      <p class="cform__note" data-i18n="form.note">Formu kullanmak istemezseniz doğrudan contact@chagantechs.com adresine yazabilirsiniz.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__brand">
+      <a class="brand" href="#top" aria-label="Chagan Technology">
+        <img class="brand__mark" src="/assets/img/mark.png" alt="" width="30" height="30">
+        <span class="brand__text">Chagan<span class="brand__thin"> Technology</span></span>
+      </a>
+      <p class="foot__legal">Çağan Yazılım Teknolojileri ve Pazarlama Ltd. Şti.</p>
+    </div>
+
+    <nav class="foot__col" aria-label="Ürünler">
+      <h3 data-i18n="foot.products">Ürünler</h3>
+      <a href="https://www.tunr.sh" target="_blank" rel="noopener">tunr</a>
+      <a href="https://www.vitrus.dev" target="_blank" rel="noopener">Vitrus</a>
+      <a href="https://www.eduira.com" target="_blank" rel="noopener">Eduira</a>
+      <a href="https://www.kavriyo.com" target="_blank" rel="noopener">Kavriyo</a>
+    </nav>
+
+    <nav class="foot__col" aria-label="Şirket">
+      <h3 data-i18n="foot.company">Şirket</h3>
+      <a href="#about" data-i18n="nav.about">Hakkımızda</a>
+      <a href="#services" data-i18n="nav.services">Hizmetler</a>
+      <a href="#archive" data-i18n="nav.archive">Arşiv</a>
+      <a href="#contact" data-i18n="nav.contact">İletişim</a>
+    </nav>
+
+    <div class="foot__col">
+      <h3 data-i18n="foot.contact">İletişim</h3>
+      <a href="mailto:contact@chagantechs.com">contact@chagantechs.com</a>
+      <a href="mailto:support@chagantechs.com">support@chagantechs.com</a>
+      <span class="foot__addr" data-i18n="contact.address">Gaziantep Teknopark, 4/A Blok Z/12<br>Şehitkamil / Gaziantep, Türkiye</span>
+    </div>
+  </div>
+
+  <div class="wrap foot__bottom">
+    <p>© <span id="year">2026</span> Chagan Technology</p>
+    <p data-i18n="foot.madein">Gaziantep Teknopark'ta tasarlandı ve geliştirildi.</p>
+  </div>
+</footer>
+
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

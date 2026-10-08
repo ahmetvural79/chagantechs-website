@@ -1,0 +1,18 @@
+# The 2017 PHP site is kept locally for reference only.
+# It contains hardcoded database credentials and must never be published.
+legacy/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Netlify
+.netlify/
+
+# Source files that do not belong in a deployed site
+*.psd
+*.ai

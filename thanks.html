@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teşekkürler — Chagan Technology</title>
+<meta name="description" content="Mesajınız bize ulaştı.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0812">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  .mini { min-height: 100vh; display: grid; place-items: center; text-align: center; position: relative; overflow: hidden; }
+  .mini__inner { position: relative; padding-block: 60px; }
+  .mini img { width: 64px; height: 64px; margin: 0 auto 28px; }
+  .mini h1 { font-size: clamp(2rem, 6vw, 3.1rem); margin-bottom: 18px; }
+  .mini p { color: var(--muted); max-width: 46ch; margin: 0 auto 32px; }
+</style>
+</head>
+<body>
+<section class="mini">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="wrap mini__inner">
+    <img src="/assets/img/mark.png" alt="Chagan Technology" width="64" height="64">
+    <h1 class="grad" data-m="title">Teşekkürler!</h1>
+    <p data-m="body">Mesajınız bize ulaştı. En kısa sürede contact@chagantechs.com üzerinden dönüş yapacağız.</p>
+    <a class="btn btn--primary" href="/" data-m="cta">Ana sayfaya dön</a>
+  </div>
+</section>
+<script>
+(function () {
+  var lang = "tr";
+  try { lang = localStorage.getItem("chagan-lang") || "tr"; } catch (e) {}
+  if (lang !== "en") return;
+  var en = {
+    title: "Thank you!",
+    body: "Your message reached us. We will get back to you from contact@chagantechs.com shortly.",
+    cta: "Back to home page"
+  };
+  document.documentElement.lang = "en";
+  document.title = "Thank you — Chagan Technology";
+  Object.keys(en).forEach(function (k) {
+    var el = document.querySelector('[data-m="' + k + '"]');
+    if (el) el.textContent = en[k];
+  });
+})();
+</script>
+</body>
+</html>

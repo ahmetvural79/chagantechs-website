@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayfa bulunamadı — Chagan Technology</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0812">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  .mini { min-height: 100vh; display: grid; place-items: center; text-align: center; position: relative; overflow: hidden; }
+  .mini__inner { position: relative; padding-block: 60px; }
+  .mini img { width: 64px; height: 64px; margin: 0 auto 28px; }
+  .mini .code { font: 700 clamp(4rem, 16vw, 8rem)/1 var(--font-display); letter-spacing: -.04em; margin-bottom: 10px; }
+  .mini h1 { font-size: clamp(1.4rem, 4vw, 2rem); margin-bottom: 18px; }
+  .mini p { color: var(--muted); max-width: 44ch; margin: 0 auto 32px; }
+</style>
+</head>
+<body>
+<section class="mini">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="wrap mini__inner">
+    <img src="/assets/img/mark.png" alt="Chagan Technology" width="64" height="64">
+    <div class="code grad">404</div>
+    <h1 data-m="title">Sayfa bulunamadı</h1>
+    <p data-m="body">Aradığınız sayfa taşınmış ya da hiç var olmamış olabilir.</p>
+    <a class="btn btn--primary" href="/" data-m="cta">Ana sayfaya dön</a>
+  </div>
+</section>
+<script>
+(function () {
+  var lang = "tr";
+  try { lang = localStorage.getItem("chagan-lang") || "tr"; } catch (e) {}
+  if (lang !== "en") return;
+  var en = {
+    title: "Page not found",
+    body: "The page you are looking for may have moved, or may never have existed.",
+    cta: "Back to home page"
+  };
+  document.documentElement.lang = "en";
+  document.title = "Page not found — Chagan Technology";
+  Object.keys(en).forEach(function (k) {
+    var el = document.querySelector('[data-m="' + k + '"]');
+    if (el) el.textContent = en[k];
+  });
+})();
+</script>
+</body>
+</html>
